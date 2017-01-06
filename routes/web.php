@@ -14,3 +14,20 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+/*
+ * Inicio rutas admin
+ */
+
+/*
+ * Fin rutas admin
+ */
+
+/*
+ * Inicio rutas usuarios
+ */
+
+/*
+ * Fin rutas usuarios
+ */
