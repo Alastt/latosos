@@ -27,12 +27,6 @@ class AddPerfilUsuarioTable extends Migration
             $table->string('info_solicitada');
             $table->string('email_contacto');
             $table->timestamps();
-            $table->integer('user_id')->unsigned();
-            $table->integer('imagen_id')->unsigned();
-
-            $table->foreign('user_id')
-                ->references('id')->on('users')
-                ->onDelete('cascade');
         });
     }
 

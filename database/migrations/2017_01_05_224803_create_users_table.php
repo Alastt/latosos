@@ -22,6 +22,11 @@ class CreateUsersTable extends Migration
             $table->enum('type', ['member', 'admin', 'mod']);
             $table->rememberToken();
             $table->timestamps();
+            $table->integer('perfil_id')->unsigned();
+
+            $table->foreign('perfil_id')
+                ->references('id')->on('perfil_usuario')
+                ->onDelete('cascade');
         });
     }
 
